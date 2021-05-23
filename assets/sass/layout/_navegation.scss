@@ -1,0 +1,11 @@
+.barra {
+    font: $primary-font;
+    font-weight: 700;
+    font-size: x-large;
+    &__item {
+        padding-left: 20px;
+    }
+    &__link {
+        color: $smoky-glass;
+    }
+}
