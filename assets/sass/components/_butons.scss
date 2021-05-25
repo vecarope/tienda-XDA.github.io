@@ -1,0 +1,10 @@
+.section {
+    &__botom {
+        width: 150px;
+        height: 50px;
+        background-color: $white;
+        border-bottom: 2px solid $smoky-glass;
+        font-weight: 700;
+        font-size: large;
+    }
+}

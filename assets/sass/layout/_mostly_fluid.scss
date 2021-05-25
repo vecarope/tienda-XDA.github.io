@@ -1,0 +1,38 @@
+@media only screen and (min-width:1200px) {
+    .container-mostly-fluid {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1.1fr;
+        grid-template-rows: 0.6fr 3fr 0.5fr;
+        grid-template-areas: "nav  nav" "section  aside" "footer  aside ";
+        grid-gap: 0.1rem;
+    }
+    header {
+        grid-area: nav;
+    }
+    aside {
+        grid-area: aside;
+    }
+    section {
+        grid-area: section;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container-mostly-fluid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2.2fr 2.2fr 1fr;
+        grid-template-areas: "nav" "aside" "section" "footer"
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-mostly-fluid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2.2fr 2.2fr 1fr;
+        grid-template-areas: "nav" "aside" "section" "footer"
+    }
+}

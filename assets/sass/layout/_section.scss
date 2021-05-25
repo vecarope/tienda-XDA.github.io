@@ -1,0 +1,28 @@
+.container {
+    box-sizing: content-box;
+    width: 390px;
+    right: 500px;
+    text-align: left;
+    margin-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+.section {
+    &__1 {
+        font-family: $secondary-font;
+        font-size: 50px;
+        font-weight: 700;
+        color: $smoky_glass;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    &__2 {
+        font-family: $primary-font;
+        font-size: large;
+        font-weight: 400;
+        color: $smoky_glass;
+        line-height: 1.7;
+        text-align: left;
+    }
+}
