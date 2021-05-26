@@ -21,18 +21,4 @@
         font-size: medium;
         border-radius: 0;
     }
-    &__banner {
-        height: 227px;
-        width: 50px;
-        background-color: $white;
-        color: $smoky-glass;
-        font-family: $secondary-font;
-        font-weight: 700;
-        font-size: large;
-        writing-mode: vertical-lr;
-        text-align: center;
-        position: absolute;
-        top: 548px;
-        left: 565px;
-    }
 }

@@ -9947,10 +9947,9 @@ body {
   .container-mostly-fluid {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1.1fr;
-    grid-template-rows: 0.6fr 3fr 0.5fr;
-    grid-template-areas: "nav  nav" "section  aside" "footer  aside ";
-    grid-gap: 0.1rem;
+    grid-template-columns: 1fr 0.03fr 1.1fr;
+    grid-template-rows: 0.7fr 3fr 0.5fr;
+    grid-template-areas: "nav nav  nav" "section section aside" "footer article aside";
   }
 
   header {
@@ -9968,21 +9967,37 @@ body {
   footer {
     grid-area: footer;
   }
-}
-@media only screen and (max-width: 576px) {
-  .container-mostly-fluid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2.2fr 2.2fr 1fr;
-    grid-template-areas: "nav" "aside" "section" "footer";
+
+  article {
+    grid-area: article;
   }
 }
 @media only screen and (max-width: 768px) {
-  .container-mostly-fluid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 2.2fr 2.2fr 1fr;
-    grid-template-areas: "nav" "aside" "section" "footer";
+  .container-mostly-fluid,
+.container {
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 0.7fr 3fr 4fr 1fr;
+    grid-template-areas: "nav nav" "aside aside " "section section " "footer article ";
   }
 }
+@media only screen and (max-width: 576px) {
+  .container-mostly-fluid,
+.container {
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 0.7fr 3fr 4fr 1fr;
+    grid-template-areas: "nav nav " "aside aside " "section section " "footer article ";
+  }
+}
+.banner {
+  background-color: #FFF;
+  color: #0C0910;
+  width: x-large;
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  font-size: large;
+  writing-mode: vertical-lr;
+}
+
 .nav {
   box-sizing: content-box;
   font-family: "Raleway", sans-serif;
@@ -10026,10 +10041,6 @@ body {
   color: #FFF;
 }
 
-.aside {
-  box-sizing: border-box;
-}
-
 .footer {
   background-color: #0C0910;
   color: #FFF;
@@ -10051,20 +10062,6 @@ body {
   font-weight: 700;
   font-size: medium;
   border-radius: 0;
-}
-.foot__banner {
-  height: 227px;
-  width: 50px;
-  background-color: #FFF;
-  color: #0C0910;
-  font-family: "Old Standard TT", serif;
-  font-weight: 700;
-  font-size: large;
-  writing-mode: vertical-lr;
-  text-align: center;
-  position: absolute;
-  top: 548px;
-  left: 565px;
 }
 
 .container {

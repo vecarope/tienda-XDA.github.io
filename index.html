@@ -12,13 +12,11 @@
 
 <body>
     <div class="container-mostly-fluid">
-        <header class="box header">
-            <nav class="navbar nav navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <div class="cubo">
-                        <p class="cubo__text">XDA</p>
+        <header class="header">
+            <nav class="navbar nav navbar-expand-lg navbar-expand-sm  navbar-m-auto">
+                <a class="cubo">
+                    <p class="cubo__text">XDA</p>
 
-                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -41,13 +39,15 @@
                 </div>
             </nav>
         </header>
-        <aside class=" box aside">
+        <aside class="aside">
             <div class="aside__box">
-                <img class="aside__img" src="assets/img/imagen1.png">
+                <source media="(min-width:768w)" srcset="img_imagen1.png">
+                <source media="(min-width:576w)" srcset="img_imagen1.png">
+                <img class="aside__img" src="assets/img/imagen1.png" style="width:100%;">
 
             </div>
         </aside>
-        <section class="box section">
+        <section class="section">
             <div class="container">
                 <div class="section__1">
                     <p>Lorem ipsum ad valorem</p>
@@ -62,7 +62,7 @@
         </section>
 
 
-        <footer class="box footer ">
+        <footer class=" footer ">
             <div class="container">
                 <div class="foot">
                     <div class="foot__form">
@@ -77,14 +77,15 @@
 
                 </div>
             </div>
-            <div class="foot__banner">
 
-                suscribir
-            </div>
 
 
         </footer>
-
+        <article>
+            <div class="banner ">
+                suscribir
+            </div>
+        </article>
 
     </div>
     </div>
