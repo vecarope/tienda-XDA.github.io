@@ -1,11 +1,25 @@
 .container {
     box-sizing: content-box;
-    width: 390px;
-    right: 500px;
+    width: 50%;
+    right: 60%;
     text-align: left;
     margin-left: 40px;
     padding-bottom: 30px;
     padding-top: 40px;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 52%;
+        right: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 65%;
+        right: 65%;
+    }
 }
 
 .section {

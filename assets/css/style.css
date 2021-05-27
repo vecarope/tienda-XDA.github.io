@@ -10041,6 +10041,24 @@ body {
   color: #FFF;
 }
 
+@media only screen and (max-width: 1180px) {
+  .aside__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .aside__img {
+    width: 100%;
+    height: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aside__img {
+    width: 100%;
+    height: 40%;
+  }
+}
 .footer {
   background-color: #0C0910;
   color: #FFF;
@@ -10066,14 +10084,26 @@ body {
 
 .container {
   box-sizing: content-box;
-  width: 390px;
-  right: 500px;
+  width: 50%;
+  right: 60%;
   text-align: left;
   margin-left: 40px;
   padding-bottom: 30px;
   padding-top: 40px;
 }
 
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 52%;
+    right: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 65%;
+    right: 65%;
+  }
+}
 .section__1 {
   font-family: "Old Standard TT", serif;
   font-size: 50px;
