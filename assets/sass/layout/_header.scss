@@ -1,42 +1,55 @@
-  .nav {
-      box-sizing: content-box;
-      font-family: $primary-font;
-      font-weight: 700;
-      font-size: large;
-      padding: 0;
-      &__items {
-          padding-left: 20px;
-          padding-right: 20px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-      }
-      &__link {
-          color: $smoky-glass;
-      }
-      &__items-end {
-          padding-right: 90px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-      }
-  }
-  
-  .cubo {
-      width: 91px;
-      height: 91px;
-      background: $smoky-glass;
-      position: absolute;
-      left: 0;
-      bottom: 1px;
-      &__text {
-          max-width: 110px;
-          padding-top: 25px;
-          padding-right: 10px;
-          padding-left: 10Px;
-          padding-bottom: 0;
-          text-align: center;
-          font-family: $secondary-font;
-          font-weight: 700;
-          font-size: xx-large;
-          color: $white;
-      }
-  }
+.nav {
+    display: flex;
+    align-content: center;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: large;
+    padding: 0px;
+    &__items {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__link {
+        color: $smoky-glass;
+    }
+    &__items-end {
+        padding-right: 90px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.cubo {
+    width: 91px;
+    height: 91px;
+    background: $smoky-glass;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    &__text {
+        max-width: 110px;
+        padding-top: 25px;
+        padding-right: 10px;
+        padding-left: 10Px;
+        padding-bottom: 0;
+        text-align: center;
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: xx-large;
+        color: $white;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .nav {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        padding: 15px;
+    }
+}

@@ -3,23 +3,9 @@
     width: 50%;
     right: 60%;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 30px;
     padding-bottom: 30px;
     padding-top: 40px;
-}
-
-@media only screen and (max-width: 576px) {
-    .container {
-        width: 52%;
-        right: 60%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 65%;
-        right: 65%;
-    }
 }
 
 .section {
@@ -38,5 +24,33 @@
         color: $smoky_glass;
         line-height: 1.7;
         text-align: left;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 80%;
+        height: 50%;
+    }
+    .section {
+        &__1 {
+            width: 70%;
+            height: 60%;
+            font-size: 1.875rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        width: 70%;
+        right: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        width: 90%;
+        right: 100%;
     }
 }

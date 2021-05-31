@@ -1,3 +1,8 @@
+.article {
+    display: flex;
+    align-content: center;
+}
+
 .banner {
     background-color: $white;
     color: $smoky-glass;
@@ -6,4 +11,24 @@
     font-weight: 700;
     font-size: large;
     writing-mode: vertical-lr;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        position: relative;
+        left: 700px;
+        bottom: 170px;
+        margin: none;
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .banner {
+        position: relative;
+        left: 288px;
+        bottom: 150px;
+        font-size: x-large;
+    }
 }
